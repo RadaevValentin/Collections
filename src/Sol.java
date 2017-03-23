@@ -22,12 +22,29 @@ public class Sol {
         this.list.forEach(System.out::println);
     }
 
+//    public void delCopy(){
+//        Set<Object> set = new HashSet<>(list);
+//        list.clear();
+//        list.addAll(set);
+//    } // если порядок не важен
+
+    public void delCopy(){
+        Object a = null;
+        for(int i = 0; i < list.size(); i ++){
+            a = list.get(i);
+            for(int j = i+1; j< list.size(); j++){
+                if(a.equals(list.get(j))){
+                    list.remove(j);
+                }
+            }
+        }
+    } // если порядок важен
+
+
     public static void main(String[] args) {
     Sol sol = new Sol();
         sol.initialize("q", "w", 2, 3, 4, 2, 3, 4, 1, "q", "x", "q", 6, 4, 1, "w");
-        Set<Object> set = new HashSet<>(sol.getList());
-        sol.getList().clear();
-        sol.getList().addAll(set);
+        sol.delCopy();
         sol.printList();
     }
 }
