@@ -26,7 +26,7 @@ public class Sol {
 //        Set<Object> set = new HashSet<>(list);
 //        list.clear();
 //        list.addAll(set);
-//    } // если порядок не важен
+//    } // если порядок добавления элементов не важен
 
     public void delCopy(){
         Object a = null;
@@ -38,7 +38,7 @@ public class Sol {
                 }
             }
         }
-    } // если порядок важен
+    } // если порядок добавления элементов важен
 
 
     public static void main(String[] args) {
