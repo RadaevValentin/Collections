@@ -43,7 +43,7 @@ public class Sol {
 
     public static void main(String[] args) {
     Sol sol = new Sol();
-        sol.initialize("q", "w", 2, 3, 4, 2, 3, 4, 1, "q", "x", "q", 6, 4, 1, "w");
+        sol.initialize("q", "w", 2, 3, 4, 2, 3, 4, 1, "q", "x", "q", 6, 4, 1, "w", "a", 546, "%", "a", 546);
         sol.delCopy();
         sol.printList();
     }
